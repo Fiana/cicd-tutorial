@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
   res.send(process.env.MESSAGE || "HELLO WORLD");
 });
 
+app.get("/newR", (req, res) => {
+  res.send(process.env.MESSAGE || "Another one bites the dust!");
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at port ${port}`);
 });
